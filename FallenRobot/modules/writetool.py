@@ -17,11 +17,11 @@ def handwrite(update: Update, context: CallbackContext):
     message.reply_photo(
         photo=req,
         caption=f"""
-Successfully Written Text 💘
+Successfully Written Text 
 
-✨ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
-🥀 **Requested by :** {update.effective_user.first_name}
-❄ **Link :** `{req}`""",
+ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+ **Requested by :** {update.effective_user.first_name}
+ **Link :** `{req}`""",
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
             [
